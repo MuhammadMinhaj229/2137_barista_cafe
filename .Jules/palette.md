@@ -1,0 +1,3 @@
+## 2024-07-17 - Screen Reader Consistency for Visual Cues
+**Learning:** Bootstrap 5 utility classes for required field indicators (like `<sup class="text-danger">*</sup>`) can be problematic for screen readers, as they may vocalize the literal asterisk. When fields are already using the HTML5 `required` attribute, screen readers convey this semantics naturally.
+**Action:** When adding required visual indicators to form fields utilizing the `required` attribute, always append `aria-hidden="true"` to the visual cue (e.g., `<sup class="text-danger" aria-hidden="true">*</sup>`) to prevent redundant or confusing screen reader announcements.
