@@ -1,0 +1,3 @@
+## 2026-07-18 - Required Field Visual Identifiers
+**Learning:** Adding a visual required asterisk using `<sup>*</sup>` to form fields is common, but sighted users benefit from consistency across all required inputs (e.g. Email and Message, not just Name). Simultaneously, these asterisks create screen reader noise (reading "star" or "asterisk") alongside standard required attributes.
+**Action:** When adding or verifying visual required indicators, ensure they are applied to all functionally required fields, and always include `aria-hidden="true"` on the visual indicator element to hide it from assistive technologies.
