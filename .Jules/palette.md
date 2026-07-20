@@ -1,0 +1,3 @@
+## 2024-07-20 - Required Field Indicator Accessibility
+**Learning:** Bootstrap templates often use `<sup class="text-danger">*</sup>` to visually indicate required fields. Without `aria-hidden="true"`, screen readers will redundantly read "star" or "asterisk" in addition to the input's actual required state (which is conveyed via the `required` attribute).
+**Action:** When adding or modifying visual required indicators in forms that already use HTML5 `required` attributes, always ensure the visual indicator (like an asterisk) includes `aria-hidden="true"` to prevent redundant and confusing screen reader announcements.
